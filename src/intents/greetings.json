@@ -1,0 +1,35 @@
+{
+	"name": "Saudações",
+	"locale": "pt",
+	"data": [
+	  {
+		"intent": "saudacoes.ola",
+		"utterances": [
+		  "olá",
+		  "oi",
+		  "oii",
+		  "oiii",
+		  "oiiii",
+		  "tudo bem?",
+		  "voce pode me ajudar?"
+		],
+		"answers": [
+		  "Olá e bem vindo (a)! Para realizarmos a busca de profissionais, insira a região nos campos abaixo:"
+		]
+	  },
+	  {
+		"intent": "saudacoes.tchau",
+		"utterances": [
+		  "tchau",
+		  "tchauu",
+		  "tchauuu",
+		  "obrigado",
+		  "até mais",
+		  "ok obrigado"
+		],
+		"answers": [
+		  "Se precisar de mais alguma coisa, volte aqui e me chame novamente!"
+		]
+	  }
+	]
+  }
