@@ -28,9 +28,11 @@ api.post('/', async (request, response) => {
 
 	const nlpResponse = await nlp.process('pt', message);
 
+	const {answer, intent} = nlpResponse
+
 	const botResponse = {
-		answer: nlpResponse.answer,
-		intent: nlpResponse.intent,
+		answer: answer || 'Desculpe, não entendi.',
+		intent: intent === "None" ? 'naoentendi' :  intent,
 		lastIntent
 	}
 
