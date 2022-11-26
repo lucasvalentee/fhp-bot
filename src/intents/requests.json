@@ -22,6 +22,18 @@
 			]
 		},
 		{
+			"intent": "solicitacao.informar_regiao",
+			"utterances": [
+				"solicitacao.informar_regiao"
+			],
+			"answers": [
+				{
+					"answer": "Certo! Antes de buscarmos o profissional desejado, preciso que você insira a região desejada nos campos abaixo:",
+					"opts": ["showRegionInputs"]
+				}
+			]
+		},
+		{
 			"intent": "solicitacao.buscar_profissional.area_medica",
 			"utterances": [
 				"solicitacao.buscar_profissional.area_medica"
