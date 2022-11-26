@@ -1,0 +1,37 @@
+{
+	"name": "Profissionais",
+	"locale": "pt",
+	"data": [
+		{
+			"intent": "profissional.dentista",
+			"utterances": [
+				"dentista",
+				"preciso de um dentista",
+				"médico dos dentes",
+				"preciso cuidar dos dentes",
+				"cáries",
+				"estou com cáries",
+				"tratamento de canal"
+			],
+			"answers": [
+				{
+					"answer": "Certo, vou buscar por dentistas."
+				}
+			]
+		},
+		{
+			"intent": "profissional.gastroenterologista",
+			"utterances": [
+				"gastroenterologista",
+				"gastro",
+				"estomago",
+				"endoscopia",
+				"médico do estomago",
+				"dor no estomago"
+			],
+			"answers": [
+				"Certo, vou buscar por gastroenterologistas."
+			]
+		}
+	]
+}

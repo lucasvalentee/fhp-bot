@@ -1,0 +1,34 @@
+{
+	"name": "Solicitações",
+	"locale": "pt",
+	"data": [
+		{
+			"intent": "solicitacao.buscar_profissional",
+			"utterances": [
+				"solicitacao.buscar_profissional.regiao",
+				"buscar profissional",
+				"buscar médico",
+				"preciso de um médico",
+				"preciso de um profissional",
+				"você pode me ajudar?",
+				"quero buscar um médico",
+				"quero buscar um profissional"
+			],
+			"answers": [
+				{
+					"answer": "Certo! Para realizar a busca de profissionais, insira a região desejada nos campos abaixo:",
+					"opts": ["showRegionInputs"]
+				}
+			]
+		},
+		{
+			"intent": "solicitacao.buscar_profissional.area_medica",
+			"utterances": [
+				"solicitacao.buscar_profissional.area_medica"
+			],
+			"answers": [
+				"Por favor, me informe a área médica desejada."
+			]
+		}
+	]
+}

@@ -5,6 +5,8 @@ const { Nlp } = require('@nlpjs/nlp');
 const { LangPt } = require('@nlpjs/lang-pt');
 
 const greetings = require('./intents/greetings.json');
+const requests = require('./intents/requests.json');
+const professionals = require('./intents/professionals.json');
 
 const api = express();
 
@@ -23,6 +25,8 @@ api.post('/', async (request, response) => {
 	nlp.settings.autoSave = false;
 	nlp.addLanguage('pt');
 	await nlp.addCorpus(greetings);
+	await nlp.addCorpus(requests);
+	await nlp.addCorpus(professionals);
 
 	await nlp.train();
 
@@ -31,13 +35,13 @@ api.post('/', async (request, response) => {
 	
 	const {answer, intent, answers} = nlpResponse
 	
-	const {opts: options} = answers.find(item => item.answer === answer);
+	const currentAnswer = answers.find(item => item.answer === answer);
 
 	const botResponse = {
 		answer: answer || 'Desculpe, não entendi.',
 		intent: intent === "None" ? 'naoentendi' :  intent,
 		lastIntent,
-		options
+		options: currentAnswer?.opts
 	}
 
 	lastIntent = botResponse.intent;

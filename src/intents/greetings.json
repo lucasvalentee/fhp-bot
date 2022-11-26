@@ -3,7 +3,7 @@
 	"locale": "pt",
 	"data": [
 		{
-			"intent": "saudacoes.ola",
+			"intent": "saudacao.ola",
 			"utterances": [
 				"olá",
 				"oi",
@@ -21,7 +21,7 @@
 			]
 		},
 		{
-			"intent": "saudacoes.tchau",
+			"intent": "saudacao.tchau",
 			"utterances": [
 				"tchau",
 				"tchauu",
