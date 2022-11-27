@@ -15,7 +15,8 @@
 			],
 			"answers": [
 				{
-					"answer": "Certo, vou buscar por dentistas."
+					"answer": "Certo, vou buscar por dentistas.",
+					"opts": ["showProfessionalData"]
 				}
 			]
 		},
@@ -30,7 +31,10 @@
 				"dor no estomago"
 			],
 			"answers": [
-				"Certo, vou buscar por gastroenterologistas."
+				{
+					"answer": "Certo, vou buscar por gastroenterologistas.",
+					"opts": ["showProfessionalData"]
+				}
 			]
 		}
 	]
