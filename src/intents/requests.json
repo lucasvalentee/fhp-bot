@@ -34,6 +34,18 @@
 			]
 		},
 		{
+			"intent": "solicitacao.nao_encontrou_tente_novamente",
+			"utterances": [
+				"solicitacao.nao_encontrou_tente_novamente"
+			],
+			"answers": [
+				{
+					"answer": "Desculpe, não encontrei nenhum profissional na região informada, por favor tente novamente.",
+					"opts": ["showRegionInputs"]
+				}
+			]
+		},
+		{
 			"intent": "solicitacao.buscar_profissional.area_medica",
 			"utterances": [
 				"solicitacao.buscar_profissional.area_medica"
